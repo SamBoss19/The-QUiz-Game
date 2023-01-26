@@ -12,4 +12,5 @@ for questions in question_data:
 quiz = QuizBrain(question_bank)
 while quiz.still_have_questions() == True:
     quiz.next_question()
-
+else:
+    quiz.final_score()

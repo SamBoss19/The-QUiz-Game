@@ -16,8 +16,14 @@ class QuizBrain:
             print(f"The correct answer is: {current_question.answer}")
             self.score += 1
             print(f"Your current score is {self.score} / {self.question_no}")
+            
         elif question != current_question.answer:
             print("Incorrect, You made the wrong choice")
             print(f"The correct answer is: {current_question.answer}")
-            print(f"Your current score is {self.score} / {self.question_no}")  
+            print(f"Your current score is {self.score} / {self.question_no}") 
+             
+
+    def final_score(self):
+        print('You have completed the quiz')
+        print(f"Your final score is {self.score} / {self.question_no} ")
 
